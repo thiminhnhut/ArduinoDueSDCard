@@ -14,7 +14,7 @@
         "url": "https://github.com/thiminhnhut/ArduinoDueSDCard.git"
     },
     "export": {
-        "include": ["SDCardInfo", "SDStore"]
+        "include": ["SDCardInfo", "SDStorage"]
     },
     "frameworks": "arduino",
     "platforms": "atmelavr"

@@ -58,11 +58,11 @@ Thư viện ArduinoDueSDCard
 
   * File `SDCardInfo.cpp <https://github.com/thiminhnhut/ArduinoDueSDCard/blob/master/src/SDCardInfo.cpp>`_.
 
-  * File `SDStore.h <https://github.com/thiminhnhut/ArduinoDueSDCard/blob/master/src/SDStore.h>`_:
+  * File `SDStorage.h <https://github.com/thiminhnhut/ArduinoDueSDCard/blob/master/src/SDStorage.h>`_:
 
   .. code::
 
-    SDStore(uint8_t mode);
+    SDStorage(uint8_t mode);
 
     bool checkStatusInitCard(uint8_t pinCS);
 

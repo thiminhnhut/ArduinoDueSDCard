@@ -8,7 +8,7 @@
 
 SDCardInfo	KEYWORD1
 
-SDStore	KEYWORD1
+SDStorage	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)

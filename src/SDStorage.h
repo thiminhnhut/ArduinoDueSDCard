@@ -1,11 +1,11 @@
-#ifndef SDStore_h
-#define SDStore_h
+#ifndef SDStorage_h
+#define SDStorage_h
 
 #include <Arduino.h>
 #include <SPI.h>
 #include <SD.h>
 
-class SDStore {
+class SDStorage {
 private:
     File _myFile;
 
@@ -17,7 +17,7 @@ private:
 
     void _writeData(String data);
 public:
-    SDStore(uint8_t mode);
+    SDStorage(uint8_t mode);
 
     bool checkStatusInitCard(uint8_t pinCS);
 
