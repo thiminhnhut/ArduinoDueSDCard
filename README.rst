@@ -62,9 +62,9 @@ Thư viện ArduinoDueSDCard
 
   .. code::
 
-    SDStore(uint8_t mode, uint8_t pinCS);
+    SDStore(uint8_t mode);
 
-    bool checkStatusInitCard();
+    bool checkStatusInitCard(uint8_t pinCS);
 
     bool getStatusInitCard();
 

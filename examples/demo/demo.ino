@@ -4,7 +4,7 @@
 #include "Configuration.h"
 
 SDCardInfo _SDCardInfo(__CS_PIN__);
-SDStore _SDStore(FILE_WRITE, __CS_PIN__);
+SDStore _SDStore(FILE_WRITE);
 
 void setup() {
     SerialMonitor.begin(__BAUDRATE__);
@@ -13,7 +13,7 @@ void setup() {
         SerialMonitor.println(F("\n-->Success!"));
     }
 
-    if (_SDStore.checkStatusInitCard()) {
+    if (_SDStore.checkStatusInitCard(__CS_PIN__)) {
         SerialMonitor.println(F("\n-->Success!"));
         // _SDStore.removeFile(__FILE_DATA_LOGGER__);
     }

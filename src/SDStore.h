@@ -10,7 +10,6 @@ private:
     File _myFile;
 
     uint8_t _mode;
-    uint8_t _pinCS;
 
     bool _statusInitCard = false;
 
@@ -18,9 +17,9 @@ private:
 
     void _writeData(String data);
 public:
-    SDStore(uint8_t mode, uint8_t pinCS);
+    SDStore(uint8_t mode);
 
-    bool checkStatusInitCard();
+    bool checkStatusInitCard(uint8_t pinCS);
 
     bool getStatusInitCard();
 

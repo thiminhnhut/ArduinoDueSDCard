@@ -1,12 +1,11 @@
 #include "SDStore.h"
 
-SDStore::SDStore(uint8_t mode, uint8_t pinCS) {
+SDStore::SDStore(uint8_t mode) {
     _mode = mode;
-    _pinCS = pinCS;
 }
 
-bool SDStore::checkStatusInitCard() {
-    if (SD.begin(_pinCS)) {
+bool SDStore::checkStatusInitCard(uint8_t pinCS) {
+    if (SD.begin(pinCS)) {
         _statusInitCard = true;
     } else {
         _statusInitCard = false;
