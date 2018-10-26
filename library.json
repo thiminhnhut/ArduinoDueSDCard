@@ -1,0 +1,21 @@
+{
+    "name": "ArduinoDueSDCard",
+    "keywords": "ArduinoDueSDCard",
+    "description": "Arduino Due SD Card for Arduino",
+    "authors": {
+        "name": "thiminhnhut",
+        "email": "thiminhnhut@gmail.com",
+        "url": "https://github.com/thiminhnhut",
+        "maintainer": true
+    },
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thiminhnhut/ArduinoDueSDCard.git"
+    },
+    "export": {
+        "include": ["SDCardInfo", "SDStore"]
+    },
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
+}
