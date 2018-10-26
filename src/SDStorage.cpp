@@ -26,7 +26,7 @@ bool SDStorage::writeData(const String &filename, String data) {
         SDStorage::_myFile = SD.open(filename, _mode);
         if (SDStorage::_myFile) {
             _writeData(data);
-            closeFile();
+            _closeFile();
             return true;
         } else {
             return false;
@@ -44,7 +44,7 @@ bool SDStorage::readData(const String &filename) {
             while (SDStorage::_myFile.available()) {
               _data = SDStorage::_myFile.readString();
             }
-            closeFile();
+            _closeFile();
             return true;
         } else {
             return false;
@@ -54,7 +54,7 @@ bool SDStorage::readData(const String &filename) {
     }
 }
 
-void SDStorage::closeFile() {
+void SDStorage::_closeFile() {
     SDStorage::_myFile.close();
 }
 

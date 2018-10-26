@@ -72,8 +72,6 @@ Thư viện ArduinoDueSDCard
 
     bool readData(const String &filename);
 
-    void closeFile();
-
     String getData();
 
     void removeFile(const String &filename);

@@ -16,6 +16,8 @@ private:
     String _data;
 
     void _writeData(String data);
+
+    void _closeFile();
 public:
     SDStorage(uint8_t mode);
 
@@ -26,8 +28,6 @@ public:
     bool writeData(const String &filename, String data);
 
     bool readData(const String &filename);
-
-    void closeFile();
 
     String getData();
 
